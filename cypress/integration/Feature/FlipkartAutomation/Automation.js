@@ -27,8 +27,8 @@ import{Given,When,Then,And} from 'cypress-cucumber-preprocessor/steps'
         // cy.get("._2kHMtA").first().should("be.visible").click();
         // cy.get('._2kHMtA', { timeout: 10000 }).should('have.length', 24).click();
         // cy.get('._2kHMtA').eq(0).click();
-            cy.intercept('GET', '**/search').as('searchResults');
-        cy.wait('@searchResults');
+        cy.intercept('GET', '**/search').as('searchresults');
+        cy.wait('@searchresults');
         
           
 
